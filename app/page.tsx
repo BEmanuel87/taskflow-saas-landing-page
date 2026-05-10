@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import CtaSection from "@/components/sections/CtaSection";
 import FaqSection from "@/components/sections/FaqSection";
@@ -22,6 +23,7 @@ export default function Home() {
         <FaqSection />
         <CtaSection />
       </main>
+      <Footer />
     </>
   );
 }
