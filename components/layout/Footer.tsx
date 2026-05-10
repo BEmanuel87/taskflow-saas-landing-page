@@ -19,7 +19,10 @@ export default function Footer() {
           ))}
         </nav>
         <p className="text-[13px] text-muted">
-          © 2024 TaskFlow, Inc. All rights reserved.
+          © {new Date().getFullYear()} TaskFlow, Inc. All rights reserved.
+          <span className="block mt-1 text-[12px] opacity-70">
+            Fictional SaaS landing page project created for portfolio purposes.
+          </span>
         </p>
       </div>
     </footer>
