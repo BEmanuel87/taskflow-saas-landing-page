@@ -14,9 +14,9 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     "grad-bg text-white font-semibold shadow-[0_0_40px_rgba(108,99,255,0.3)] hover:shadow-[0_0_60px_rgba(108,99,255,0.5)] hover:opacity-90",
   outline:
-    "border border-white/10 text-[var(--color-text)] font-medium hover:border-white/25 hover:bg-white/[0.04]",
+    "border border-white/10 text-text font-medium hover:border-white/25 hover:bg-white/[0.04]",
   ghost:
-    "text-[var(--color-muted)] font-medium border border-white/7 hover:text-[var(--color-text)] hover:border-white/20",
+    "text-muted font-medium border border-white/7 hover:text-text hover:border-white/20",
 };
 
 export function Button({
