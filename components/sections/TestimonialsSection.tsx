@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
               <span className="grad-text">never looked back.</span>
             </>
           }
-          subtitle="Real words from real teams who use TaskFlow every day."
+          subtitle="What teams could achieve with TaskFlow."
         />
 
         <div className="grid gap-5 md:grid-cols-3">
