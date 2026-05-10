@@ -19,7 +19,7 @@ export default function Footer() {
           ))}
         </nav>
         <p className="text-[13px] text-muted">
-          © 2024 TaskFlow, Inc. All rights reserved.
+          © {new Date().getFullYear()} TaskFlow, Inc. All rights reserved.
         </p>
       </div>
     </footer>
