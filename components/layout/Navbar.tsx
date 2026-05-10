@@ -29,7 +29,7 @@ export default function Navbar() {
           : "bg-[rgba(9,9,15,0.6)]",
       )}
     >
-      <div className="mx-auto flex max-w-[1160px] items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-290 items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="font-syne text-xl font-extrabold grad-text">
           TaskFlow
@@ -41,7 +41,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors duration-200"
+              className="text-sm font-medium text-muted hover:text-text transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen((v) => !v)}
-          className="md:hidden text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors"
+          className="md:hidden text-muted hover:text-text transition-colors"
         >
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -73,7 +73,7 @@ export default function Navbar() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden border-t border-white/7 bg-[var(--color-surface)] px-6 pb-6 pt-4"
+          className="md:hidden border-t border-white/7 bg-surface px-6 pb-6 pt-4"
         >
           <nav className="flex flex-col gap-4 mb-6">
             {NAV_LINKS.map((link) => (
@@ -81,7 +81,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-base text-[var(--color-muted)] hover:text-[var(--color-text)] transition-colors"
+                className="text-base text-muted hover:text-text transition-colors"
               >
                 {link.label}
               </a>
